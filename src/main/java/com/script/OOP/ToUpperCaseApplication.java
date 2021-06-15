@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
+@RestController
 public class ToUpperCaseApplication {
 
 	public static void main(String[] args) {
@@ -14,11 +15,8 @@ public class ToUpperCaseApplication {
 	}
 
 	@GetMapping("/toUpperCase")
-
-	public String upCase(@RequestParam(value = "string", defaultValue = "stringa di default") String given) {
-
-		return given.toUpperCase();
-
+	public String hello(@RequestParam(value = "string", defaultValue = "testo Qualsiasi") String string) {
+		return string.toUpperCase();
 	}
 
 }
