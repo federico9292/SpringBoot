@@ -15,7 +15,7 @@ public class ToUpperCaseApplication {
 	}
 
 	@GetMapping("/toUpperCase")
-	public String hello(@RequestParam(value = "string", defaultValue = "testo Qualsiasi") String string) {
+	public String toUpperCase(@RequestParam(value = "string", defaultValue = "testo Qualsiasi") String string) {
 		return string.toUpperCase();
 	}
 
