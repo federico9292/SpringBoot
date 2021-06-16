@@ -17,7 +17,7 @@ Group, Artifact, Name, Description, selezionare la versione di Java da utilizzar
 
 + Esecuzione del codice
     + Aprire “localhost:8080/toUpperCase” per la stringa di default oppure
-    ![](/img_SpringBoot/springBoot_testoDefault.jpg)
+        ![](/img_SpringBoot/springBoot_testoDefault.jpg)
     + Aprire “localhost:8080/toUpperCase?string=InserisciQuiLaTuaStringa" per rendere maiuscola la stringa passata come parametro
     ad esempio:    
         ![](/img_SpringBoot/springBoot_testo_personalizzato.jpg)
